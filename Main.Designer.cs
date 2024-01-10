@@ -1,6 +1,6 @@
 ﻿namespace NotifyIconSample
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// 設計工具所需的變數。
@@ -28,10 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Main
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "Main";
             this.Text = "Form1";
+            this.Resize += new System.EventHandler(this.MainForm_Resize);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
